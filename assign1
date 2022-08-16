@@ -4,16 +4,16 @@ pipeline {
   parallel {
     stage ('build') { 
       steps {
-        sh' 
+        sh''' 
         echo "hello"
-        '
+        '''
        }
      }
     stage ('deploy') {
     steps {
-      sh'
+      sh'''
       echo"deploy stage"
-      '
+      '''
      }
    }
  }
